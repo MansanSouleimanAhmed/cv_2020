@@ -15,7 +15,7 @@ export default function ModalContact(props) {
            <div style={style.MODAL_STYLE}>
                 <div style={style.OVERLAY_STYLE}>
                     {/* bE CAREFULL the style of the REDCROSS is imported from the style file*/}
-                    <div  data-aos={"fade"}>
+                    <div  data-aos={"fade-up"}>
                     <RedCross  onclick={event => {props.setContact(state => {return !state;
                         });  
                      }}/> 

@@ -237,7 +237,7 @@ body {
 
             .project {
                 position: absolute;
-                height: 40px;
+                height: 30px;
                 width: 100px;
                 top: 70%;
                 left: 50%;
@@ -245,11 +245,10 @@ body {
 
                 p {
                     text-align: center;
-                    margin: 0px;
-                    padding-top: 7px;
-                    font-size: 1.9em;
+                    font-size: 1.8em;
                     text-shadow: none;
                     color: #fff;
+                   
                     &:hover {
                         cursor: pointer;
                     }

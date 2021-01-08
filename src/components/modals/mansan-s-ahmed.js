@@ -16,7 +16,7 @@ export default function MansanSAhmed(props) {
             <div style={style.MODAL_STYLE}>
                 <div style={style.OVERLAY_STYLE}>
                     {/* bE CAREFULL the style of the REDCROSS is imported from the style file*/}
-                    <div  data-aos={"fade"}>
+                    <div  data-aos={"fade-up"}>
                     <RedCross  onclick={event => {props.setModalName(state => {return !state;
                         });  
                      }}/> 
@@ -30,17 +30,6 @@ export default function MansanSAhmed(props) {
                     <p>
                 
                     </p>
-              {/*   <p>{"You can find here this portfolio's github repository and some project and their github repository."}</p>
-                    <img height={"200px"} width={"250px"} src={require('../../mimified-img/the-cook.gif')} alt="loading..."/>
-
-                    <p>{"Second project"}</p>
-                    <p>{"You can find here this portfolio's github repository and some project and their github repository."}</p>
-                    <img height={"200px"} width={"250px"} src={require('../../mimified-img/the-cook.gif')} alt="loading..."/>
-
-                    <p>{"Second project"}</p>
-                    <p>{"You can find here this portfolio's github repository and some project and their github repository."}</p>
-                    <img height={"200px"} width={"250px"} src={require('../../mimified-img/the-cook.gif')} alt="loading..."/>
-                    <p>{"Second project"}</p>  */}
                     </div>
                 </div>
             </div>

@@ -119,7 +119,7 @@ function Cv() {
                     onMouseMove={e => set({xy: [e.clientX, e.clientX]})}>
                     <div
                         className={"project"}
-                        style={{backgroundColor: "red", zIndex: 5}}
+                        style={{ zIndex: 10, backgroundColor: "#ff0000", padding:"5px"}}
                         onClick={event => {
                             setProjects(state => {
                                 return !state;
