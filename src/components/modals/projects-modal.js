@@ -6,10 +6,11 @@ import "aos/dist/aos.css";
 import RedCross from "./red-cross";
 import HairstyleWebesite from "../../mimified-img/hairsstyle-website.jpg";
 import GameWebsite from "../../mimified-img/game-website.jpg";
+import Creatif from "../../mimified-img/preview.png";
 import Huddle from "../../mimified-img/huddle.jpg";
 export default function ProjectsModal(props) {
     const [slide, setSlide] = useState(0);
-    const urlCV = "https://github.com/MansanSouleimanAhmed/cv_2020";
+
     useEffect(() => {
         Aos.init({duration: 2000});
     });
@@ -48,7 +49,9 @@ export default function ProjectsModal(props) {
                             />
                             <a
                                 style={style.ANCHOR_STYLE}
-                                href={urlCV}
+                                href={
+                                    "https://github.com/MansanSouleimanAhmed/cv_2020"
+                                }
                                 target={"_blank"}>
                                 <button style={style.PROJ_BUTTON_STYLE}>
                                     {"Github"}
@@ -58,6 +61,7 @@ export default function ProjectsModal(props) {
                         <p style={style.P_STYLE}>
                             {"This is in process of being updated."}
                         </p>
+                        {/*Hairstyle*/}
                         <div style={style.PROJECT_CONTAINER_STYLE}>
                             <img
                                 style={style.IMG_STYLE}
@@ -66,7 +70,19 @@ export default function ProjectsModal(props) {
                             />
                             <a
                                 style={style.ANCHOR_STYLE}
-                                href={urlCV}
+                                href={
+                                    "https://coiffeur-simple-project.netlify.app"
+                                }
+                                target={"_blank"}>
+                                <button style={style.WEB_BUTTON_STYLE}>
+                                    {"Website"}
+                                </button>
+                            </a>
+                            <a
+                                style={style.ANCHOR_STYLE}
+                                href={
+                                    "https://github.com/MansanSouleimanAhmed/Hairstylist"
+                                }
                                 target={"_blank"}>
                                 <button style={style.PROJ_BUTTON_STYLE}>
                                     {"Github"}
@@ -76,15 +92,28 @@ export default function ProjectsModal(props) {
                         <p style={style.P_STYLE}>
                             {"This is in process of being updated."}
                         </p>
+                        {/*Creatif */}
                         <div style={style.PROJECT_CONTAINER_STYLE}>
                             <img
                                 style={style.IMG_STYLE}
-                                src={GameWebsite}
+                                src={Creatif}
                                 alt="loading..."
                             />
                             <a
                                 style={style.ANCHOR_STYLE}
-                                href={urlCV}
+                                href={
+                                    "https://creatif-simple-project.netlify.app/"
+                                }
+                                target={"_blank"}>
+                                <button style={style.WEB_BUTTON_STYLE}>
+                                    {"Website"}
+                                </button>
+                            </a>
+                            <a
+                                style={style.ANCHOR_STYLE}
+                                href={
+                                    "https://github.com/MansanSouleimanAhmed/creative-single-page"
+                                }
                                 target={"_blank"}>
                                 <button style={style.PROJ_BUTTON_STYLE}>
                                     {"Github"}
@@ -94,15 +123,30 @@ export default function ProjectsModal(props) {
                         <p style={style.P_STYLE}>
                             {"This is in process of being updated."}
                         </p>
+
+                        {/* Hubble */}
                         <div style={style.PROJECT_CONTAINER_STYLE}>
                             <img
                                 style={style.IMG_STYLE}
                                 src={Huddle}
                                 alt="loading..."
                             />
+
                             <a
                                 style={style.ANCHOR_STYLE}
-                                href={urlCV}
+                                href={
+                                    "https://hubble-simple-project.netlify.app"
+                                }
+                                target={"_blank"}>
+                                <button style={style.WEB_BUTTON_STYLE}>
+                                    {"Website"}
+                                </button>
+                            </a>
+                            <a
+                                style={style.ANCHOR_STYLE}
+                                href={
+                                    "https://github.com/MansanSouleimanAhmed/hubble"
+                                }
                                 target={"_blank"}>
                                 <button style={style.PROJ_BUTTON_STYLE}>
                                     {"Github"}

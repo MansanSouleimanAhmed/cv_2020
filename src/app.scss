@@ -242,13 +242,13 @@ body {
                 top: 70%;
                 left: 50%;
                 transform: translateX(-50%);
-
+                background-color: rgb(9, 13, 245);
                 p {
                     text-align: center;
                     font-size: 1.8em;
                     text-shadow: none;
                     color: #fff;
-                   
+
                     &:hover {
                         cursor: pointer;
                     }
