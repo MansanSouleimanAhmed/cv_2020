@@ -15,36 +15,38 @@ export default function ProfileModal(props) {
         <Fragment>
             <div style={style.MODAL_STYLE}>
                 <div style={style.OVERLAY_STYLE}>
-                    {/* bE CAREFULL the style of the REDCROSS is imported from the style file*/}
                     <div data-aos={"fade-up"}>
                         <RedCross
                             onclick={event => {
-                                props.setProfileModal(state => {
+                                props.setModalName(state => {
                                     return !state;
                                 });
                             }}
                         />
                     </div>
-                    <div style={style.PARA_STYLE}>
-                        <div data-aos={"fade"} style={style.PARA_CONTENT_STYLE}>
-                            <p style={style.P_CONTENT_STYLE}>
-                                {
-                                    "I did a Belgian boot camp for coding. There I have learned how to learn code,  and how to communicate your part of a project with others. Becode gave me the opportunity to participate to an Hackaton organized by the Redcross. It was really challenging and I am glad I took part because it was gratifying to solve real world problems. "
-                                }
-                            </p>
+                    <div
+                        data-aos={"fade"}
+                        style={style.CONTENT_CONTAINER_STYLE}>
+                        <div data-aos={"fade-left"} style={style.PARA_STYLE}>
+                            <div style={style.PARA_CONTENT_STYLE}>
+                                <p style={style.P_CONTENT_STYLE}>
+                                    {
+                                        "I did a Belgian boot camp for coding called Becode. There I have learned how to learn coding,  and how to communicate my work to others developers. Becode gave me the opportunity to participate to an Hackaton organized by the Redcross. It was really challenging and I am glad I took part of that event, because it was gratifying to solve real world problems. "
+                                    }
+                                </p>
+                            </div>
+                            <a
+                                href={MonCV}
+                                download={"cv.pdf"}
+                                style={{
+                                    display: "block",
+                                    textDecoration: "none",
+                                }}>
+                                <button style={style.CV_BUTTON_STYLE}>
+                                    <p>{"CV PDF"}</p>
+                                </button>
+                            </a>
                         </div>
-
-                        <a
-                            href={MonCV}
-                            download={"cv.pdf"}
-                            style={{
-                                display: "block",
-                                textDecoration: "none",
-                            }}>
-                            <button style={style.CV_BUTTON_STYLE}>
-                                <p>{"CV PDF"}</p>
-                            </button>
-                        </a>
                     </div>
                 </div>
             </div>

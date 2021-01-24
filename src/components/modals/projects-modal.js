@@ -35,8 +35,10 @@ export default function ProjectsModal(props) {
                         data-aos={"fade"}
                         style={style.CONTENT_CONTAINER_STYLE}>
                         <div data-aos={"fade"}>
-                            <p style={style.P_STYLE}>
-                                {"This is in process of being updated."}
+                            <p style={{width: "70%", marginLeft: "15%"}}>
+                                {
+                                    "Each project runs on Netlify and the Github repository is assoicated to each project. The first project is the repository of the current Portfolio."
+                                }
                             </p>
                             <a
                                 href={MonCV}
@@ -50,7 +52,6 @@ export default function ProjectsModal(props) {
                                 </button>
                             </a>
                         </div>
-                        <p>{"This is this repo's github"}</p>
                         <div
                             data-aos={"fade"}
                             style={style.PROJECT_CONTAINER_STYLE}>
