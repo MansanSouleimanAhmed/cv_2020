@@ -50,8 +50,6 @@ export const style = {
         height: "230px",
         width: "250px",
         boxShadow: "-2px -1px 52px 10px rgba(0,0,0,0.83)",
-        /*      -webkit-box-shadow: -2px -1px 102px 24px rgba(0,0,0,0.83);
-        -moz-box-shadow: -2px -1px 102px 24px rgba(0,0,0,0.83); */
     },
     PROJ_BUTTON_STYLE: {
         position: "absolute",
@@ -84,8 +82,53 @@ export const style = {
         background: "rgb(70, 188, 305)",
         boxShadow: " inset 0px 0px  10px 0px  rgb(12, 20, 7)",
     },
+    CV_BUTTON_STYLE: {
+        display: "block",
+        position: "relative",
+        borderRadius: "8%",
+        height: "55px",
+        width: "80px",
+        textAlign: "center",
+        left: "50%",
+        transform: "translate(-50%)",
+        marginBottom: "50px",
+        cursor: "pointer",
+        outline: "inherit",
+        border: "none",
+        marginTop: "50px",
+        textDecoration: "none",
+        fontSize: "16px",
+        background: "rgb(245, 210, 9)",
+        boxShadow: " inset 0px 0px  10px 0px rgb(15, 0, 9)",
+    },
     IMG_STYLE: {
         height: "230px",
         width: "250px",
+    },
+    HR_CONTACT_STYLE: {
+        position: "relative",
+        width: "25%",
+        left: "50%",
+        transform: "translate(-50%)",
+        margin: "20px 0px 20px 0px",
+    },
+    P_CONTACT: {
+        wordBreak: "break-word",
+        paddingRight: "5px",
+    },
+    SPAN_CONTACT_STYLE: {fontWeight: "bold"},
+    PARA_STYLE: {paddingLeft: "10%", paddingRight: "10%"},
+    PARA_CONTENT_STYLE: {
+        position: "relative",
+        backgroundColor: " rgb(219, 221, 119)",
+        width: "100%",
+        marginTop: "50px",
+        paddingTop: "50px",
+        paddingBottom: "50px",
+        zIndex: "-1",
+    },
+    P_CONTENT_STYLE: {
+        paddingLeft: "20px",
+        paddingRight: "20px",
     },
 };

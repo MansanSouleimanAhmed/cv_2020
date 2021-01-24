@@ -8,6 +8,7 @@ import HairstyleWebesite from "../../mimified-img/hairsstyle-website.jpg";
 import GameWebsite from "../../mimified-img/game-website.jpg";
 import Creatif from "../../mimified-img/preview.png";
 import Huddle from "../../mimified-img/huddle.jpg";
+import MonCV from "../../../src/cv.pdf";
 export default function ProjectsModal(props) {
     const [slide, setSlide] = useState(0);
 
@@ -33,12 +34,23 @@ export default function ProjectsModal(props) {
                     <div
                         data-aos={"fade"}
                         style={style.CONTENT_CONTAINER_STYLE}>
-                        <p data-aos={"fade-left"} style={style.P_STYLE}>
-                            {"This is in process of being updated."}
-                        </p>
-                        <p data-aos={"fade-left"}>
-                            {"This is this repo's github"}
-                        </p>
+                        <div data-aos={"fade"}>
+                            <p style={style.P_STYLE}>
+                                {"This is in process of being updated."}
+                            </p>
+                            <a
+                                href={MonCV}
+                                download={"cv.pdf"}
+                                style={{
+                                    display: "block",
+                                    textDecoration: "none",
+                                }}>
+                                <button style={style.CV_BUTTON_STYLE}>
+                                    <p>{"CV PDF"}</p>
+                                </button>
+                            </a>
+                        </div>
+                        <p>{"This is this repo's github"}</p>
                         <div
                             data-aos={"fade"}
                             style={style.PROJECT_CONTAINER_STYLE}>

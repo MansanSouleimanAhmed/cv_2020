@@ -1,6 +1,5 @@
 import React, {Fragment, useRef, useEffect, useState} from "react";
 import {useSpring, animated, useTrail} from "react-spring";
-import MonCV from "../../src/cv.pdf";
 import mousePosition from "./cv-component/hook";
 import Navbar from "../nav-bar";
 import Text from "../components/cv-component/text";
@@ -48,54 +47,13 @@ function Cv() {
                         <div className={"item"} />
                         <div className={"item"} />
                     </div>
-                    <div className={"profile-span"}>
-                        <span>
-                            {
-                                "I may not have a lot of experience, however I'm a highly motivated web developer, who never stops learning and is not afraid to take on new challenges. I want to become a full stack developer, proficient in React JS in the front-end and Django (a Python's framework) in the back-end."
-                            }
-                        </span>
-                        <br />
-                        <a href={MonCV} download={"cv.pdf"}>
-                            <div className={"cv-pdf"}>{"CV PDF"}</div>
-                        </a>
-                    </div>
+                    <div className={"profile-span"}></div>
                 </div>
                 <div className={`modal`}>
                     <div className={"display-project"}>
                         <div
                             className={"croix"}
-                            onClick={() => setModal(modal => !modal)}>
-                            <div className={"item"} />
-                            <div className={"item"} />
-                            <div className={"item"} />
-                        </div>
-                        <div className={"item-one"}></div>
-                        <div className={"item-two"}>
-                            <div className={"projects"}>
-                                <p>{"Project 1 : Hairstyle"} </p>
-                                <a
-                                    href={
-                                        "https://github.com/MansanSouleimanAhmed/Hairstylist"
-                                    }>
-                                    <p>{"Github"}</p>
-                                </a>
-                                <a
-                                    href={
-                                        "https://coiffure-hairstylist.netlify.app/"
-                                    }>
-                                    <p>{"Website"}</p>
-                                </a>
-                                <br />
-                                <p>{"Project 2: This CV's repository"}</p>
-                                <a
-                                    href={
-                                        "https://github.com/MansanSouleimanAhmed/cv"
-                                    }>
-                                    <p>{"This CV's Github"}</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div className={"item-three"}></div>
+                            onClick={() => setModal(modal => !modal)}></div>
                     </div>
                 </div>
                 <div className={"blur-left"}></div>
@@ -119,7 +77,11 @@ function Cv() {
                     onMouseMove={e => set({xy: [e.clientX, e.clientX]})}>
                     <div
                         className={"project"}
-                        style={{ zIndex: 10, backgroundColor: "#ff0000", padding:"5px"}}
+                        style={{
+                            zIndex: 10,
+                            backgroundColor: "#ff0000",
+                            padding: "5px",
+                        }}
                         onClick={event => {
                             setProjects(state => {
                                 return !state;
@@ -160,22 +122,6 @@ function Cv() {
                     <div className={"croix-contact"}>
                         <div className={"item"} /> <div className={"item"} />
                         <div className={"item"} />
-                    </div>
-                    <div className={"contact-span"}>
-                        <span>
-                            {"Gmail : mansan.souleiman.ahmed@gmail.com"}
-                        </span>
-                        <hr />
-                        <span>{"GSM : +32 (0) 465 34 74 37"}</span>
-                        <hr />
-                        <br />
-                        <span>{"Watassp : +32 (0) 465 34 74 37"}</span>
-                        <hr />
-                        <span>{"Code postal : 4000"}</span>
-                        <hr />
-                        <span>{"City : Liège"}</span>
-                        <hr />
-                        <span>{"Country : Belgium"}</span>
                     </div>
                 </div>
                 <Footer
