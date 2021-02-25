@@ -125,8 +125,6 @@ export default function ProjectsModal(props) {
                         <p style={style.P_STYLE}>
                             {"This project was built with HTML && CSS.."}
                         </p>
-
-                        {/* Hubble */}
                         <div style={style.PROJECT_CONTAINER_STYLE}>
                             <img
                                 style={style.IMG_STYLE}

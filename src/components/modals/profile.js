@@ -18,7 +18,7 @@ export default function ProfileModal(props) {
                     <div data-aos={"fade-up"}>
                         <RedCross
                             onclick={event => {
-                                props.setModalName(state => {
+                                props.setProfileModal(state => {
                                     return !state;
                                 });
                             }}
